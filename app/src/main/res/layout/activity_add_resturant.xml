@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddRestaurantActivity">
+
+    <EditText
+        android:id="@+id/etRestaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name" />
+
+    <EditText
+        android:id="@+id/etRestaurantAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Address"
+        android:layout_below="@id/etRestaurantName"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSelectRestaurantImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Restaurant Image"
+        android:layout_below="@id/etRestaurantAddress"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivRestaurantImage"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/btnSelectRestaurantImage"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnUploadRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Restaurant"
+        android:layout_below="@id/ivRestaurantImage"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

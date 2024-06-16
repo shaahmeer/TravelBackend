@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddPlaceActivity">
+
+    <EditText
+        android:id="@+id/etPlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place Name" />
+
+    <EditText
+        android:id="@+id/etPlaceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place Description"
+        android:layout_below="@id/etPlaceName"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSelectPlaceImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Place Image"
+        android:layout_below="@id/etPlaceDescription"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivPlaceImage"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/btnSelectPlaceImage"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnUploadPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Place"
+        android:layout_below="@id/ivPlaceImage"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

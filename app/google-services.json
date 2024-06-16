@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930491872584",
+    "project_id": "touristadminapp",
+    "storage_bucket": "touristadminapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930491872584:android:e3d60f8c5d726143fbef7d",
+        "android_client_info": {
+          "package_name": "com.example.touristadminapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFB2EFEDrLLOJTnJMIPNl9ECZ2a329lBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

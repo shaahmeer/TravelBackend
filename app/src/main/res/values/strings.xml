@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TouristAdminApp</string>
+
+    <string-array name="categories">
+        <item>Park</item>
+        <item>Resturants</item>
+        <item>Category 3</item>
+    </string-array>
+
+
+</resources>

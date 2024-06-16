@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".UI.MainActivity"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City Name" />
+
+    <EditText
+        android:id="@+id/etCityDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City Description"
+        android:layout_below="@id/etCityName"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSelectCityImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City Image"
+        android:layout_below="@id/etCityDescription"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivCityImage"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/btnSelectCityImage"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnAddHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Hotel"
+        android:layout_below="@id/ivCityImage"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnAddPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Place"
+        android:layout_below="@id/ivCityImage"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnAddHotel"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnAddRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCityImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnAddPlace"
+        android:text="Restaurant" />
+
+    <Button
+        android:id="@+id/btnUploadCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddHotel"
+        android:layout_marginTop="16dp"
+        android:text="Upload City"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUploadCity"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp" />
+
+</RelativeLayout>

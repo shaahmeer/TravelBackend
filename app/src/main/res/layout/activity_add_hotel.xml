@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddHotelActivity">
+
+    <EditText
+        android:id="@+id/etHotelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotel Name" />
+
+    <EditText
+        android:id="@+id/etHotelDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotel Description"
+        android:layout_below="@id/etHotelName"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etHotelContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:layout_below="@id/etHotelDescription"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSelectHotelImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hotel Image"
+        android:layout_below="@id/etHotelContact"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/ivHotelImage"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/btnSelectHotelImage"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnUploadHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Hotel"
+        android:layout_below="@id/ivHotelImage"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
